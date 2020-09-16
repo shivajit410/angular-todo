@@ -8,10 +8,18 @@ import { TodosComponent } from './components/todos/todos.component';
 import { TodoItemComponent } from './components/todo-item/todo-item.component';
 import { from } from 'rxjs';
 import { HeaderComponent } from './components/layout/header/header.component';
+import { AddTodoComponent } from './components/add-todo/add-todo.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
-  declarations: [AppComponent, TodosComponent, TodoItemComponent, HeaderComponent],
-  imports: [BrowserModule, AppRoutingModule, HttpClientModule],
+  declarations: [
+    AppComponent,
+    TodosComponent,
+    TodoItemComponent,
+    HeaderComponent,
+    AddTodoComponent,
+  ],
+  imports: [BrowserModule, AppRoutingModule, HttpClientModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent],
 })
